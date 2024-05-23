@@ -1,3 +1,4 @@
+# Detect loop/cycle in the Linked list
 class Node: 
   
     # Constructor to initialize the node object 

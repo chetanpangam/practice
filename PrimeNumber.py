@@ -1,5 +1,5 @@
 # PrimeNumber.py
-
+# Check if given number is prime number or not
 def isPrime(num):
     mid = num//2
 

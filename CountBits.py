@@ -1,3 +1,4 @@
+# Count the SET bits for given number
 import math
 def hammingWeight(n):
     """

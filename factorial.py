@@ -1,4 +1,5 @@
 # factorial.py
+# Find the factorial of the given number recursively
 
 def fact(n):
     if n == 0:

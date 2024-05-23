@@ -1,3 +1,5 @@
+# print the alphabet rangoli
+
 def print_rangoli(size):
     # your code goes here
     a_z = [chr(i) for i in range(97, 123)]
