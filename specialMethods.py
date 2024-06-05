@@ -146,3 +146,19 @@ for element in word_list:
 value= "qwertyqwertyqwertyqwerty"
 str = textwrap.fill(value, width=6) #returns single string with linebreaker
 print(str)
+
+print("====== groupby() ========")
+from itertools import groupby
+
+seq = "11222344445"
+groups = []
+uniquekeys = []
+for k, g in groupby(seq):
+    groups.append(list(g))
+    uniquekeys.append(k)
+
+print(groups)
+print(uniquekeys)
+
+for key in range(len(groups)):
+     print((len(groups[key]), int(uniquekeys[key])), end=" ")
