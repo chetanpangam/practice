@@ -26,5 +26,5 @@ print(st.push(33))
 print(st.push(44))
 print(st.isFull())
 
-for i in st.:
+for i in st:
     print(i)
