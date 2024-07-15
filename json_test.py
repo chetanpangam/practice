@@ -43,3 +43,8 @@ x = {
 }
 
 print(json.dumps(x, indent=4))
+new_string = json.dumps(x)
+print(new_string)
+
+print(type(json.loads(new_string)))
+print(json.loads(new_string))
