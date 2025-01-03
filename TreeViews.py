@@ -92,6 +92,24 @@ def top_view(root):
     
     return [pos_map[pos] for pos in range(m, n+1)]
 
+from collections import deque
+def bottom_view(root):
+    if not root:
+        return []
+    pos_map = {}
+    q = deque([(root, 0)])
+    while q:
+        node, pos = q.popleft()
+        pos_map[pos] = node.info
+        if node.left:
+            q.append((node.left, pos-1))
+        if node.right:
+            q.append((node.right, pos+1))
+    print(pos_map)    
+    m, n = min(pos_map), max(pos_map)
+    
+    return [pos_map[pos] for pos in range(m, n+1)]
+
 tree = BinarySearchTree()
 t = int(input())
 
@@ -108,3 +126,6 @@ print(right_view(tree.root))
 
 print("\nTop View")
 print(top_view(tree.root))
+
+print("\nBottom View")
+print(bottom_view(tree.root))

@@ -29,6 +29,7 @@ class JSONWork:
             'x-rapidapi-host': "wordsapiv1.p.rapidapi.com"
         }
         conn.request("GET", endpoint , headers=headers)
+        print(endpoint)
         response = conn.getresponse()
         data = response.read().decode('utf-8')
         #print(type(data))
@@ -54,5 +55,4 @@ if __name__ == "__main__":
     if not values:
         print(f"{key} does not exists in the output")
     else:
-        for val in values:
-            print(val)
+        print(values)
