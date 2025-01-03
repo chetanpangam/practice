@@ -9,16 +9,14 @@ result = []
 myDict = {}
 myList = []
 for val in li:
-    if val not in myDict:
-        myDict[val] = 1
-    else:
-        myDict[val] += 1
+    myDict[val] = myDict.get(val, 0) + 1
  
 # using heapify to convert list into heap
 heapq.heapify(myList)
  
 # using heappush() to push elements into heap
 # pushes 4
+
 for k, v in myDict.items():
     heapq.heappush(myList, (v,k))
  

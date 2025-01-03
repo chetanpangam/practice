@@ -48,3 +48,15 @@ print(new_string)
 
 print(type(json.loads(new_string)))
 print(json.loads(new_string))
+
+val = json.dumps(42)
+print(type(json.loads(val)))
+print(json.loads(val))
+
+val = json.dumps(32.5)
+print(type(json.loads(val)))
+print(json.loads(val))
+
+val = json.dumps(True)
+print(type(json.loads(val)))
+print(json.loads(val))
